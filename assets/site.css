@@ -1204,23 +1204,50 @@ html.reveal-on img.js-reveal {
   display: grid;
   gap: clamp(1.8rem, 3.5vw, 2.4rem);
 }
-@media (min-width: 860px) {
-  .team-block .team { grid-template-columns: repeat(3, 1fr); }
-}
 .team-block .person {
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: none;
+  gap: 0;
+  align-items: stretch;
 }
+.team-block .person__photo {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 3px;
+  margin-bottom: 0.9rem;
+  background: oklch(0.22 0.008 260);
+}
+.team-block .person__photo img,
 .team-block .person img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 3 / 4;
+  height: 100%;
+  aspect-ratio: auto;
   object-fit: cover;
-  object-position: 50% 16%;
+  object-position: 50% 14%;
   filter: grayscale(1);
 }
-.team-block .person h3 { font-size: var(--step-1); }
-.team-block .person p { font-size: var(--step--1); color: var(--panel-body); }
-.team-block .person__direct { margin-top: 0.65rem; }
+.team-block .person:hover img { filter: grayscale(0); }
+.team-block .person h3 {
+  font-size: var(--step-1);
+  line-height: 1.15;
+  margin: 0;
+}
+.team-block .person__role { margin: 0.28rem 0 0.55rem; }
+.team-block .person p { font-size: var(--step--1); color: var(--panel-body); margin: 0; }
+.team-block .person__direct { margin-top: 0.7rem; }
 .team-block a { color: var(--amber); text-decoration-color: oklch(0.82 0.15 80 / 0.55); }
 .team-block a:hover { color: var(--panel-ink); text-decoration-color: var(--panel-ink); }
+@media (min-width: 860px) {
+  .team-block .team {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto 1fr auto;
+    column-gap: clamp(1.4rem, 2.6vw, 2.1rem);
+    row-gap: 0;
+  }
+  .team-block .person {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 5;
+  }
+}
