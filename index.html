@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Energy Plus: cut hotel peak demand and HVAC waste</title>
+<meta name="description" content="About 30% of a hotel bill is peak demand. Then the HVAC that isn't cooling. We take both off. Retrofit what you have. Replace only what is done.">
+<meta property="og:title" content="Energy Plus: cut hotel peak demand and HVAC waste">
+<meta property="og:description" content="Peak demand is extra pressure on every bill. HVAC waste is the rest. We take both off.">
+<meta property="og:type" content="website">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#fbfbfa">
+<link rel="icon" href="assets/img/energy-plus-logo.png">
+<link rel="stylesheet" href="assets/fonts/report-fonts.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="head" id="head">
+  <div class="wrap head__in">
+    <a class="head__mark" href="#top" aria-label="Energy Plus, home"><img src="assets/img/energy-plus-logo.png" alt="Energy Plus" width="104" height="30"></a>
+    <nav class="head__nav" aria-label="Primary">
+      <a href="#film">The film</a>
+      <a href="#plan">The plan</a>
+      <a href="#proof">Proof</a>
+      <a href="how-it-works.html">How it works</a>
+      <button type="button" class="btn btn--sm" data-book>Book the 15-minute fit call</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="hero-scrolly">
+  <section class="hero" id="top" aria-labelledby="hero-h">
+    <div class="hero__media" aria-hidden="true">
+      <img src="assets/img/hero-hotel.jpg" alt="" loading="eager" fetchpriority="high">
+      <div class="hero__scrim"></div>
+    </div>
+    <div class="wrap hero__in hero__grid">
+      <div class="hero__copy">
+        <p style="font-family:var(--font-mono);font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--panel-body);margin-bottom:0.7rem;">Energy Plus &middot; Hotel edition</p>
+        <h1 id="hero-h">Cut the peak. Cut the waste.</h1>
+        <p class="hero__lede">About 30% of a hotel bill is peak demand.<sup class="fn"><a href="#notes" aria-label="See note 15">15</a></sup> Then the HVAC that isn&rsquo;t cooling. We take both off.</p>
+        <div class="cta" data-cta>
+          <button type="button" class="btn btn--lg" data-book>Book the 15-minute fit call</button>
+          <button type="button" class="textlink js-sms-toggle" aria-expanded="false">Text Dan directly</button>
+        </div>
+        <div class="sms" role="group" aria-label="Text the founder">
+          <p class="sms__to">To Dan &middot; (864) 777-0688</p>
+          <textarea rows="4" spellcheck="false" aria-label="Message to Dan">Hi Dan, I run a hotel and I want to see what cutting the peak and the HVAC waste would look like, without the sales song and dance. What does it take to qualify?</textarea>
+          <div class="sms__foot">
+            <span class="sms__hint">Opens in your messages, ready to send.</span>
+            <a class="btn btn--sm js-sms-send" href="#" data-phone="+18647770688">Send message</a>
+          </div>
+        </div>
+      </div>
+      <figure class="bill">
+        <svg viewBox="0 0 460 592" role="img" aria-labelledby="bill-t">
+          <title id="bill-t">How a hotel electric bill is typically structured: peak demand is about 30% of the bill, set by the single worst interval of the month, and the energy charge is mostly HVAC. Both lines come off.</title>
+          <rect class="paper" x="14" y="8" width="432" height="576"/>
+          <text class="bt" x="40" y="56">COMMERCIAL ELECTRIC SERVICE</text>
+          <text class="meta" x="40" y="74">STATEMENT OF ACCOUNT</text>
+          <rect class="tag" x="344" y="40" width="76" height="22"/>
+          <text class="meta" x="382" y="54.5" text-anchor="middle">SPECIMEN</text>
+          <line class="rule" x1="40" y1="92" x2="420" y2="92"/>
+          <text class="meta" x="40" y="114">A HOTEL</text>
+          <text class="meta" x="286" y="114">DEMAND RATE</text>
+          <text class="meta" x="40" y="132">HOW A HOTEL IS BILLED</text>
+          <text class="meta" x="286" y="132">RATE &middot; DEMAND</text>
+          <line class="rule" x1="40" y1="150" x2="420" y2="150"/>
+          <text class="row" x="40" y="180">Customer charge</text>
+          <text class="amt" x="420" y="180" text-anchor="end">33.71</text>
+          <text class="row" x="40" y="212">Energy charge &middot; HVAC, kitchen, pool</text>
+          <text class="amt" x="420" y="212" text-anchor="end">the load</text>
+          <text class="row" x="40" y="268">Fuel and riders</text>
+          <text class="amt" x="420" y="268" text-anchor="end">&mdash;</text>
+          <text class="row" x="40" y="300">Demand charge &middot; ~30% of the bill</text>
+          <text class="amt" x="420" y="300" text-anchor="end">the peak</text>
+          <text class="row" x="40" y="360">Capacity + storm, also per kW</text>
+          <text class="amt" x="420" y="360" text-anchor="end">more peak</text>
+          <text class="row" x="40" y="392">Taxes</text>
+          <text class="amt" x="420" y="392" text-anchor="end">&mdash;</text>
+          <line class="rule rule--ink" x1="40" y1="416" x2="420" y2="416"/>
+          <text class="bt" x="40" y="448">TWO LINES TO CUT</text>
+          <text class="amt amt--total" x="420" y="449" text-anchor="end">demand + waste</text>
+          <line class="rule" x1="40" y1="472" x2="420" y2="472"/>
+          <text class="meta" x="40" y="496">TYPICAL HOTEL SHARE &middot; ONE 30-MINUTE PEAK</text>
+          <rect class="fine" x="40" y="570" width="196" height="3"/>
+          <path class="mk" pathLength="1" style="--d:0" d="M336 221 C 358 226, 398 223, 423 219"/>
+          <path class="mk" pathLength="1" style="--d:0" d="M196 233 C 248 240, 296 233, 328 224 M328 224 l -8.5 -1.5 M328 224 l -3.5 7.5"/>
+          <text class="mk-t" x="40" y="234" style="--d:0" transform="rotate(-2 40 234)">HVAC IS MOST OF THIS. EVEN A</text>
+          <text class="mk-t" x="40" y="248" style="--d:0" transform="rotate(-2 40 248)">NEW SYSTEM LEAVES WASTE.</text>
+          <path class="mk" pathLength="1" style="--d:1" d="M352 296 C 350 281, 428 279, 430 294 C 432 310, 353 313, 351 298 C 350 287, 370 283, 392 282"/>
+          <path class="mk" pathLength="1" style="--d:1" d="M282 322 C 310 320, 332 314, 347 306 M347 306 l -8.5 0.5 M347 306 l -4.5 7"/>
+          <text class="mk-t" x="40" y="326" style="--d:1" transform="rotate(-2 40 326)">ONE 30-MINUTE PEAK. ROOMS,</text>
+          <text class="mk-t" x="40" y="340" style="--d:1" transform="rotate(-2 40 340)">KITCHEN, POOL &mdash; ALL AT ONCE.</text>
+          <path class="mk" pathLength="1" style="--d:2" d="M330 461 C 356 467, 396 464, 424 459"/>
+          <path class="mk" pathLength="1" style="--d:2" d="M244 524 C 296 522, 346 500, 370 472 M370 472 l -9 1.5 M370 472 l -1.5 9"/>
+          <text class="mk-t mk-t--big" x="40" y="522" style="--d:2" transform="rotate(-1.5 40 522)">TAKE THE PEAK OFF.</text>
+          <text class="mk-t mk-t--big" x="40" y="546" style="--d:2" transform="rotate(-1.5 40 546)">THEN TAKE THE WASTE OFF.</text>
+        </svg>
+        <figcaption class="bill__cap">Exhibit A &middot; ~30% of a hotel bill &middot; the peak<sup class="fn"><a href="#notes" aria-label="See note 15">15</a></sup></figcaption>
+      </figure>
+    </div>
+    <div class="scrollcue" aria-hidden="true"><span></span>scroll</div>
+  </section>
+  </div>
+
+  <section class="beat beat--rule" id="problem" aria-labelledby="problem-h">
+    <div class="wrap beat__narrow">
+      <h2 id="problem-h">~30% of your bill is peak demand charges.</h2>
+      <p class="lead">That is the typical hotel share.<sup class="fn"><a href="#notes" aria-label="See note 15">15</a></sup> One 30-minute peak sets it for the month. Cut the waste, and peak-shaving takes the charge off.</p>
+      <figure class="fig" aria-label="Diagram: one 30-minute peak sets the demand charge for the entire month">
+        <svg viewBox="0 0 640 220" role="img" aria-hidden="true">
+          <line class="d soft" pathLength="1" style="--d:0" x1="40" y1="180" x2="600" y2="180"/>
+          <path class="d" pathLength="1" style="--d:1" d="M40 140 L80 136 L120 142 L160 130 L200 138 L240 128 L280 90 L300 48 L320 92 L360 134 L400 128 L440 136 L480 130 L520 138 L560 132 L600 136"/>
+          <line class="d amber" pathLength="1" style="--d:2" x1="280" y1="48" x2="320" y2="48"/>
+          <line class="dash fade" x1="300" y1="48" x2="300" y2="180"/>
+          <text class="lbl lbl--ink" x="300" y="32" text-anchor="middle">the peak</text>
+          <text class="lbl" x="40" y="204">the month</text>
+        </svg>
+        <figcaption>Fig. 01 &middot; One peak, billed all month</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="beat beat--dark" id="money" aria-labelledby="money-h">
+    <div class="wrap beat__narrow">
+      <h2 id="money-h">HVAC is your most expensive bill.</h2>
+      <p class="lead lead--dark">It is also where the most waste sits. One way we cut the peak is by pulling that lever.</p>
+      <div class="pair" role="list">
+        <article role="listitem">
+          <p class="pair__fig">15&ndash;48%</p>
+          <p class="pair__label">less HVAC energy, depending on the system.<sup class="fn"><a href="#notes" aria-label="See note 1">1</a></sup></p>
+        </article>
+        <article role="listitem">
+          <p class="pair__fig pair__fig--ink">Same 72&deg;</p>
+          <p class="pair__label">The waste comes off. The comfort stays.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="beat beat--rule" id="distort" aria-labelledby="distort-h">
+    <div class="wrap beat__narrow">
+      <h2 id="distort-h">Distortion costs more, wears more, and ends machines early.</h2>
+      <p class="lead">Machines in a hotel do not draw power smoothly. That roughness is distortion. Cleaning it cuts waste, cuts maintenance up to 40%, and lets equipment live out its full life.<sup class="fn"><a href="#notes" aria-label="See notes 1 and 12">1, 12</a></sup></p>
+      <div class="tri" role="list">
+        <article role="listitem">
+          <p class="tri__kicker">The bill</p>
+          <h3>You pay for heat that never cools a room.</h3>
+          <p>Distortion turns paid power into waste heat. That heat also fattens the peak.</p>
+        </article>
+        <article role="listitem">
+          <p class="tri__kicker">Maintenance</p>
+          <h3>Up to 40% of the service bill.</h3>
+          <p>Distortion is a key driver of those calls. Cleaning the power cuts them.</p>
+        </article>
+        <article role="listitem">
+          <p class="tri__kicker">Equipment life</p>
+          <h3>Heat retires machines early.</h3>
+          <p>Clean power gives them their full life &mdash; five to fifteen years more, in measured cases.</p>
+        </article>
+      </div>
+
+      <p class="analog__lede">When air bubbles enter the pipe, the meter still counts the flow. You pay for air, not water. Distortion works the same way.</p>
+      <figure class="analog" aria-label="Treated power on the left, a PTAC in the middle, distorted power on the right. The meter reads 100 kilowatt-hours on the left and 115 on the right.">
+        <div class="analog__board">
+          <div class="analog__head">
+            <p class="analog__cap">Treated</p>
+            <p class="analog__cap analog__cap--mid" aria-hidden="true"></p>
+            <p class="analog__cap analog__cap--hot">Distorted</p>
+          </div>
+          <svg class="analog__svg" viewBox="0 0 720 220" aria-hidden="true">
+            <rect class="a-wash a-wash--mid" x="225" y="0" width="270" height="220"/>
+            <rect class="a-wash a-wash--hot" x="495" y="0" width="225" height="220"/>
+            <line class="a-rule" x1="225" y1="0" x2="225" y2="220"/>
+            <line class="a-rule" x1="495" y1="0" x2="495" y2="220"/>
+
+            <rect class="a-pipe" x="28" y="18" width="170" height="40" rx="20"/>
+            <line class="a-flow" x1="48" y1="38" x2="178" y2="38"/>
+            <polyline class="a-flow" points="166,30 180,38 166,46"/>
+
+            <rect class="a-pipe" x="522" y="18" width="170" height="40" rx="20"/>
+            <line class="a-flow a-flow--faint" x1="542" y1="38" x2="672" y2="38"/>
+            <polyline class="a-flow a-flow--faint" points="660,30 674,38 660,46"/>
+            <circle class="a-blob b0" cx="548" cy="30" r="5.5"/>
+            <circle class="a-blob b1" cx="572" cy="46" r="4"/>
+            <circle class="a-blob b2" cx="598" cy="32" r="6.5"/>
+            <circle class="a-blob b3" cx="628" cy="44" r="3.5"/>
+            <circle class="a-blob b0" cx="652" cy="29" r="5"/>
+
+            <path class="a-wave a-wave--clean" d="M28 184 C 58 154, 88 154, 118 184 S 178 214, 208 184"/>
+            <path class="a-wave a-wave--dirty" d="M522 184 C 536 154, 546 212, 560 172 S 580 148, 594 204 S 614 216, 628 160 S 648 148, 662 200 S 678 212, 692 184"/>
+
+            <line class="a-in" x1="198" y1="114" x2="286" y2="114"/>
+            <polyline class="a-in" points="276,106 288,114 276,122"/>
+
+            <path class="a-out-glow" d="M434 114 L448 96 L462 132 L476 88 L488 126 L495 114"/>
+            <path class="a-out" d="M434 114 L448 96 L462 132 L476 88 L488 126 L495 114"/>
+            <circle class="a-spark" r="3.2">
+              <animateMotion dur="2.4s" repeatCount="indefinite" path="M434 114 L448 96 L462 132 L476 88 L488 126 L495 114"/>
+            </circle>
+
+            <g class="a-ptac" transform="translate(360 114)">
+              <rect class="a-ptac-body" x="-74" y="-34" width="148" height="68" rx="3"/>
+              <rect class="a-ptac-vent" x="-62" y="-20" width="72" height="40"/>
+              <line class="a-ptac-slat" x1="-54" y1="-10" x2="-2" y2="-10"/>
+              <line class="a-ptac-slat" x1="-54" y1="0" x2="-2" y2="0"/>
+              <line class="a-ptac-slat" x1="-54" y1="10" x2="-2" y2="10"/>
+              <g transform="translate(44 0)">
+                <g class="a-fan">
+                  <circle r="18"/>
+                  <path d="M0 -14 Q6 -4 0 0 Q-6 -4 0 -14 M0 14 Q6 4 0 0 Q-6 4 0 14 M-14 0 Q-4 6 0 0 Q-4 -6 -14 0 M14 0 Q4 6 0 0 Q4 -6 14 0"/>
+                </g>
+              </g>
+              <path class="a-heat" d="M-52 -38 C-52 -52, -38 -52, -38 -38"/>
+              <path class="a-heat" d="M-28 -40 C-28 -56, -12 -56, -12 -40"/>
+              <path class="a-heat" d="M-2 -38 C-2 -52, 12 -52, 12 -38"/>
+            </g>
+          </svg>
+          <div class="analog__foot">
+            <div class="analog__meter">
+              <p class="analog__kwh">100 kWh</p>
+            </div>
+            <div class="analog__meter analog__meter--mid" aria-hidden="true"></div>
+            <div class="analog__meter analog__meter--hot">
+              <p class="analog__kwh">115 kWh</p>
+            </div>
+          </div>
+        </div>
+        <figcaption>Fig. 02<sup class="fn"><a href="#notes" aria-label="See notes 1 and 16">1, 16</a></sup></figcaption>
+      </figure>
+
+      <p class="hurt__kicker">The three that take it first</p>
+      <ul class="hurt">
+        <li>
+          <div class="hurt__stage" aria-hidden="true">
+            <svg class="hurt__svg hurt__svg--lift" viewBox="0 0 220 150">
+              <rect class="d" x="78" y="14" width="64" height="122" rx="2"/>
+              <line class="d soft" x1="86" y1="22" x2="86" y2="128"/>
+              <line class="d soft" x1="134" y1="22" x2="134" y2="128"/>
+              <g class="cab">
+                <rect x="92" y="28" width="36" height="32" rx="1"/>
+                <line x1="98" y1="36" x2="122" y2="36"/>
+                <line x1="98" y1="44" x2="116" y2="44"/>
+              </g>
+              <line class="d amber" x1="110" y1="14" x2="110" y2="28"/>
+            </svg>
+          </div>
+          <h3>Elevator motors</h3>
+          <p class="hurt__cost">$50K&ndash;$150K <span>per cab</span></p>
+        </li>
+        <li>
+          <div class="hurt__stage" aria-hidden="true">
+            <svg class="hurt__svg hurt__svg--ptac" viewBox="0 0 220 150">
+              <rect class="d" x="36" y="42" width="148" height="72" rx="3"/>
+              <rect class="d soft" x="48" y="54" width="72" height="48"/>
+              <g transform="translate(156 78)">
+                <g class="fan">
+                  <circle r="18" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M0 -14 Q6 -4 0 0 Q-6 -4 0 -14 M0 14 Q6 4 0 0 Q-6 4 0 14 M-14 0 Q-4 6 0 0 Q-4 -6 -14 0 M14 0 Q4 6 0 0 Q4 -6 14 0"/>
+                </g>
+              </g>
+              <path class="heat" d="M58 38 C58 28, 70 28, 70 38"/>
+              <path class="heat" d="M78 36 C78 24, 92 24, 92 36"/>
+              <path class="heat" d="M100 38 C100 28, 112 28, 112 38"/>
+            </svg>
+          </div>
+          <h3>PTACs</h3>
+          <p class="hurt__cost">$1,750&ndash;$3,200 <span>per unit</span></p>
+        </li>
+        <li>
+          <div class="hurt__stage" aria-hidden="true">
+            <svg class="hurt__svg hurt__svg--pump" viewBox="0 0 220 150">
+              <rect class="d" x="48" y="58" width="58" height="42" rx="3"/>
+              <circle class="d" cx="138" cy="80" r="28"/>
+              <g transform="translate(138 80)">
+                <g class="imp">
+                  <path d="M0 0 L0 -18 A18 18 0 0 1 16 -8 Z M0 0 L16 8 A18 18 0 0 1 -16 8 Z M0 0 L-16 -8 A18 18 0 0 1 0 -18 Z"/>
+                </g>
+              </g>
+              <path class="d soft" d="M48 70 H28 V90 H48"/>
+              <path class="d amber" d="M166 80 H196"/>
+              <path class="d soft" d="M196 80 V48 H84 V58"/>
+            </svg>
+          </div>
+          <h3>Pool pumps</h3>
+          <p class="hurt__cost">$8K&ndash;$25K <span>per pump</span></p>
+        </li>
+      </ul>
+      <div class="also">
+        <p class="also__h">And the rest of the hotel</p>
+        <ul>
+          <li>Kitchen hoods</li>
+          <li>VRFs</li>
+          <li>Laundry motors</li>
+          <li>Ice machines</li>
+          <li>Booster pumps</li>
+          <li>Spa and amenity pumps</li>
+          <li>Chillers <span>&mdash; summer emergency rental $15K&ndash;$40K a week, plus lost rooms</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="beat beat--rule" id="guide" aria-labelledby="guide-h">
+    <div class="wrap beat__narrow">
+      <h2 id="guide-h">We start with a diagnosis, not a product.</h2>
+      <p class="lead">Energy Plus started from the same frustration: savings that only ever existed in the brochure. <strong>The engineers we bring in are the ones national labs hired when a measurement had to be right the first time.</strong></p>
+    </div>
+    <div class="wrap">
+      <div class="dossier">
+        <figure class="dossier__photo">
+          <div class="plate__frame plate__frame--portrait"><img class="js-reveal" src="assets/img/cliff-lab.jpg" alt="Cliff Suljak, Chief Materials Engineer, standing in a materials testing laboratory" loading="lazy"></div>
+          <figcaption class="dossier__cap">Personnel file &middot; C. Suljak &middot; Chief Materials Engineer</figcaption>
+        </figure>
+        <div class="dossier__body">
+          <h3 class="dossier__title">Meet your diagnostician.</h3>
+          <p class="dossier__lede">When the Department of Energy and the Department of Defense needed measurements right the first time, Sandia National Laboratories didn't put the contract out to bid. <strong>They handed it to Cliff Suljak.</strong><sup class="fn"><a href="#notes" aria-label="See note 5">5</a></sup></p>
+          <ul class="creds" aria-label="Career credentials">
+            <li><span class="creds__fig">Sole source</span><span class="creds__desc">Sandia National Laboratories: directed a 22-engineer team across four DOE and DOD facilities</span></li>
+            <li><span class="creds__fig">Billions</span><span class="creds__desc">in projects overseen; the $600M Salt River Project quality program was one of them</span></li>
+            <li><span class="creds__fig">ASTM</span><span class="creds__desc">eight years co-writing the national standards other engineers are tested against</span></li>
+            <li><span class="creds__fig">3 emirates</span><span class="creds__desc">called in to assess national grid reliability for Dubai, Abu Dhabi, and Sharjah</span></li>
+          </ul>
+          <p class="dossier__why">Energy savings is a measurement problem before it is an equipment problem. <strong>He runs the measurement on your hotel, on your side of the table.</strong></p>
+        </div>
+      </div>
+      <div class="workfile" data-workfile>
+        <p class="workfile__label">Selected work &middot; file <span data-wf-n>1</span> of 5 &middot; hover to hold</p>
+        <div class="workfile__view">
+          <div class="workfile__track" data-wf-track>
+            <article class="workfile__card">
+              <p class="workfile__tag">Sandia National Laboratories &middot; DOE / DOD</p>
+              <h4>Sole-source. Five years. Twenty-two engineers. Four national facilities.</h4>
+              <p>Sandia didn't put this contract out to bid. They awarded it directly to Cliff, then watched him assemble and direct a 22-person engineering team across facilities in Albuquerque, Livermore, Tonopah, and Kauai: hundreds of task orders completed under Star Wars Program infrastructure. When the DOE and DOD need structural integrity assured, they don't shop around.</p>
+            </article>
+            <article class="workfile__card">
+              <p class="workfile__tag">Salt River Project &middot; Arizona</p>
+              <h4>He built the quality control system from scratch. The industry copied it.</h4>
+              <p>As Manager of the Materials and Quality Services Division, Cliff created a complete quality control infrastructure for one of the Southwest's largest utilities: metallurgical lab, nondestructive testing, failure analysis, predictive vibration monitoring. The innovations he introduced on the $600M program were later adopted by utilities across the country.</p>
+            </article>
+            <article class="workfile__card">
+              <p class="workfile__tag">York International &middot; Los Angeles County Courts</p>
+              <h4>Northridge earthquake. County engineers on the other side. He won.</h4>
+              <p>After the Northridge earthquake threatened the world's largest thermal storage system at the LA County Courts facility, York International hired Cliff on a sole-source basis to fix it. He performed the seismic stability analysis, delivered litigation testimony against the county's own engineers and consultants, and prevailed. Then he designed, fabricated, and personally oversaw installation of the custom seismic restraint system.</p>
+            </article>
+            <article class="workfile__card">
+              <p class="workfile__tag">UAE National Power Grid &middot; Dubai &middot; Abu Dhabi &middot; Sharjah</p>
+              <h4>Three emirates. One grid. They called him in to assess all of it.</h4>
+              <p>What began as a reactive power loss engagement across Dubai, Abu Dhabi, and Sharjah grew into a full operational assessment of the UAE's power grid. Cliff mobilized in-country for extended periods, consulting directly to utility authorities on grid reliability. When a nation's infrastructure is the project, the margin for error is zero.</p>
+            </article>
+            <article class="workfile__card">
+              <p class="workfile__tag">ASTM &middot; Standards Committee &middot; 8 years</p>
+              <h4>Eight years helping write the standards everyone else is tested against.</h4>
+              <p>For eight years Cliff served on the ASTM committee developing test methods for leading-edge materials diagnostics: advanced composites and ultra-high-strength metals in extreme temperature environments. The methods he helped develop were adopted as national industry acceptance criteria for utility procurement.</p>
+            </article>
+          </div>
+          <button type="button" class="workfile__arrow workfile__arrow--prev" data-wf-prev aria-label="Previous project">&larr;</button>
+          <button type="button" class="workfile__arrow workfile__arrow--next" data-wf-next aria-label="Next project">&rarr;</button>
+        </div>
+        <div class="workfile__dots" data-wf-dots aria-label="Selected work navigation"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="beat beat--rule" id="film" aria-labelledby="film-h">
+    <div class="wrap beat__narrow">
+      <h2 id="film-h">Watch the stack. Six minutes.</h2>
+      <p class="lead">How we cut the peak, retrofit what you already have, and replace only what is done.</p>
+      <div class="film-inline">
+        <button type="button" class="film-inline__facade" data-film-inline aria-label="Play the six-minute film">
+          <img src="assets/img/film-cover.jpg" alt="" loading="lazy">
+          <span class="film-inline__scrim" aria-hidden="true"></span>
+          <span class="film-inline__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+          <span class="film-inline__meta" aria-hidden="true">The film &middot; 6 min</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="beat beat--rule" id="plan" aria-labelledby="plan-h">
+    <div class="wrap beat__narrow">
+      <h2 id="plan-h">Three steps. The first two cost you nothing.</h2>
+      <p class="lead">The first two steps are what we call <strong>The Exam:</strong> we read the demand, we meter the machines, we prove the number before anything is proposed.</p>
+      <ol class="steps">
+        <li>
+          <h3>Send a year of bills, and a few nameplates.</h3>
+          <p>Twelve months of electric bills, every page, plus phone photos of the nameplate on each PTAC, rooftop, hood, and pool board. One email. That is how we see the peak and the equipment.<sup class="fn"><a href="#notes" aria-label="See note 2">2</a></sup></p>
+        </li>
+        <li>
+          <h3>We prove the number in your hotel.</h3>
+          <p>Seven days of metering before the work, seven days after, on your own equipment, <strong>witnessed by anyone you choose:</strong> the chief engineer, the controller, your sustainability reviewer. Recognized protocols on request.<sup class="fn"><a href="#notes" aria-label="See note 8">8</a></sup> Guests do not know we were there.</p>
+        </li>
+        <li>
+          <h3>You decide.</h3>
+          <p>Keep what pays for itself, <strong>or walk away owing nothing.</strong><sup class="fn"><a href="#notes" aria-label="See note 2">2</a></sup></p>
+        </li>
+      </ol>
+      <figure class="fig" aria-label="Diagram of the proof window: seven days metered before the install, seven after, and the verified difference">
+        <svg viewBox="0 0 640 224" role="img" aria-hidden="true">
+          <line class="d soft" pathLength="1" x1="24" y1="170" x2="616" y2="170" style="--d:0"/>
+          <path class="d soft" pathLength="1" style="--d:1" d="M24 170 v5 M66 170 v5 M108 170 v5 M150 170 v5 M192 170 v5 M234 170 v5 M276 170 v5 M318 170 v5 M362 170 v5 M404 170 v5 M446 170 v5 M488 170 v5 M530 170 v5 M572 170 v5 M616 170 v5"/>
+          <path class="d" pathLength="1" style="--d:2" d="M24 88 L52 76 L80 92 L108 78 L136 90 L164 74 L192 88 L220 80 L248 92 L276 76 L304 86 L318 84"/>
+          <line class="dash fade" x1="24" y1="84" x2="318" y2="84"/>
+          <line class="dash fade" x1="330" y1="40" x2="330" y2="170"/>
+          <path class="d" pathLength="1" style="--d:3" d="M342 126 L370 120 L398 128 L426 118 L454 126 L482 120 L510 126 L538 118 L566 124 L594 120 L616 124"/>
+          <line class="d amber" pathLength="1" x1="342" y1="122" x2="616" y2="122" style="--d:4"/>
+          <path class="d soft" pathLength="1" d="M624 84 h8 M632 84 v38 M624 122 h8" style="--d:5"/>
+          <text class="lbl" x="318" y="30" text-anchor="middle">install</text>
+          <text class="lbl" x="24" y="64">your hotel, a normal week</text>
+          <text class="lbl lbl--ink" x="616" y="106" text-anchor="end">the difference, proven</text>
+          <text class="lbl" x="171" y="194" text-anchor="middle">7 days &middot; before</text>
+          <text class="lbl" x="479" y="194" text-anchor="middle">7 days &middot; after</text>
+          <text class="lbl soft-t" x="320" y="216" text-anchor="middle">per unit &middot; witnessed by anyone you choose</text>
+        </svg>
+        <figcaption>Fig. 03 &middot; The Exam's proof window</figcaption>
+      </figure>
+      <div class="floor">
+        <h3>The Floor</h3>
+        <p>If we can't prove the savings, nothing is installed and you owe nothing.<sup class="fn"><a href="#notes" aria-label="See note 2">2</a></sup></p>
+      </div>
+      <div class="cta" data-cta>
+        <button type="button" class="btn btn--lg" data-book>Book the 15-minute fit call</button>
+        <button type="button" class="textlink js-sms-toggle" aria-expanded="false">Text Dan directly</button>
+      </div>
+      <div class="sms" role="group" aria-label="Text the founder">
+        <p class="sms__to">To Dan &middot; (864) 777-0688</p>
+        <textarea rows="4" spellcheck="false" aria-label="Message to Dan">Hi Dan, I run a hotel and I want to see what cutting the peak and the HVAC waste would look like, without the sales song and dance. What does it take to qualify?</textarea>
+        <div class="sms__foot">
+          <span class="sms__hint">Opens in your messages, ready to send.</span>
+          <a class="btn btn--sm js-sms-send" href="#" data-phone="+18647770688">Send message</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="beat beat--dark" id="kit" aria-labelledby="kit-h">
+    <div class="wrap beat__narrow">
+      <h2 id="kit-h">Retrofit what you have. Replace only what is done.</h2>
+      <p class="lead lead--dark">PTACs. VRFs. Kitchen hoods. Pool equipment. <strong>A new system still has waste in it. An old one still has life in it.</strong> We match the fix to the machine: more output, less service, and the gold standard only when a unit is finished.</p>
+      <ul class="kit" aria-label="The systems we match to this hotel">
+        <li>
+          <div class="kit__img kit__img--draw">
+            <figure class="fig fig--kit" aria-label="Cutaway drawing of a coil tube: an oil film lining the inside wall before treatment, bare metal restored after">
+              <svg viewBox="0 0 600 400" role="img" aria-hidden="true">
+                <defs>
+                  <pattern id="hatch-oil" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+                    <line x1="0" y1="0" x2="0" y2="7" stroke="currentColor" stroke-width="1"/>
+                  </pattern>
+                </defs>
+                <circle class="d" pathLength="1" cx="160" cy="186" r="92" style="--d:0"/>
+                <circle class="d soft" pathLength="1" cx="160" cy="186" r="74" style="--d:1"/>
+                <circle class="d soft" pathLength="1" cx="160" cy="186" r="52" style="--d:1"/>
+                <path class="fade" style="--o:0.4" d="M160 112 a74 74 0 1 0 0.01 0 Z M160 134 a52 52 0 1 1 -0.01 0 Z" fill-rule="evenodd" fill="url(#hatch-oil)"/>
+                <path class="d soft" pathLength="1" style="--d:2" d="M226 120 L262 84 L296 84"/>
+                <circle class="d" pathLength="1" cx="440" cy="186" r="92" style="--d:3"/>
+                <circle class="d soft" pathLength="1" cx="440" cy="186" r="84" style="--d:4"/>
+                <path class="d" pathLength="1" style="--d:5" d="M286 186 h34 M320 186 l-9 -6 M320 186 l-9 6"/>
+                <text class="lbl" x="300" y="76" text-anchor="start">oil film &middot; baked on inside</text>
+                <text class="lbl" x="160" y="330" text-anchor="middle">before &middot; heat fights the film</text>
+                <text class="lbl" x="440" y="330" text-anchor="middle">after &middot; bare metal again</text>
+                <text class="lbl soft-t" x="300" y="374" text-anchor="middle">coil tube &middot; section view</text>
+              </svg>
+            </figure>
+          </div>
+          <p class="kit__fit">For any refrigerant circuit &middot; PTACs and VRFs alike</p>
+          <h3>The coil treatment</h3>
+          <p>Compressor oil bakes onto the <em>inside</em> of the coil circuit. A wash never reaches it. One refrigerant-side treatment lifts it off, for the life of the unit &mdash; including one that is new.</p>
+          <p class="kit__fig">Recovers up to 36% of lost performance<sup class="fn"><a href="#notes" aria-label="See notes 1 and 12">1, 12</a></sup></p>
+        </li>
+        <li>
+          <div class="kit__img"><img class="js-reveal" src="assets/img/kit-optimizer.jpg" alt="The HVAC optimizer control module, photographed on its mounting panel" loading="lazy"></div>
+          <p class="kit__fit">For simple on/off compressors &middot; most PTACs</p>
+          <h3>The HVAC optimizer</h3>
+          <p>Learns how the room actually runs and shuts the compressor off the moment it stops doing useful work, while the fan keeps delivering the stored comfort. Nothing changes at the pillow.</p>
+          <p class="kit__fig">15&ndash;30% less HVAC energy<sup class="fn"><a href="#notes" aria-label="See note 1">1</a></sup></p>
+        </li>
+        <li>
+          <div class="kit__img"><img class="js-reveal" src="assets/img/kit-solarcoil.jpg" alt="A solar coil collector installed with commercial HVAC equipment" loading="lazy"></div>
+          <p class="kit__fit">For inverter-type systems &middot; VRFs</p>
+          <h3>The solar coil</h3>
+          <p>Not a solar panel: a solar thermal retrofit that captures the sun's heat and puts it to work for the compressor. Sits with the equipment, not on the historic façade.</p>
+          <p class="kit__fig">30&ndash;50% more efficient system<sup class="fn"><a href="#notes" aria-label="See note 1">1</a></sup></p>
+        </li>
+        <li>
+          <div class="kit__img kit__img--draw">
+            <figure class="fig fig--kit" aria-label="Diagram: a distorted electrical waveform cleaned into a smooth one">
+              <svg viewBox="0 0 600 400" role="img" aria-hidden="true">
+                <line class="d soft" pathLength="1" style="--d:0" x1="40" y1="200" x2="560" y2="200"/>
+                <path class="d" pathLength="1" style="--d:1" d="M40 200 L70 140 L100 250 L130 120 L160 260 L190 150 L220 230 L250 170 L280 220"/>
+                <path class="d amber" pathLength="1" style="--d:2" d="M320 200 C350 120, 380 280, 410 200 C440 120, 470 280, 500 200 C530 140, 545 230, 560 200"/>
+                <line class="dash fade" x1="300" y1="80" x2="300" y2="320"/>
+                <text class="lbl" x="160" y="80" text-anchor="middle">at the panel</text>
+                <text class="lbl" x="440" y="80" text-anchor="middle">conditioned</text>
+                <text class="lbl soft-t" x="300" y="360" text-anchor="middle">hoods, pumps, compressors</text>
+              </svg>
+            </figure>
+          </div>
+          <p class="kit__fit">For the panels that feed hoods, pumps, and compressors</p>
+          <h3>Power conditioning</h3>
+          <p>Kitchen hoods and pool equipment do not draw power smoothly. Distortion becomes heat. Heat retires a machine early &mdash; and it fattens the peak. We clean the power that reaches them.</p>
+          <p class="kit__fig">A quieter peak, longer life<sup class="fn"><a href="#notes" aria-label="See notes 1 and 12">1, 12</a></sup></p>
+        </li>
+      </ul>
+      <div class="kit__flag">
+        <div class="kit__img"><video src="assets/img/suncore-rotate.mp4" poster="assets/img/kit-suncore.jpg" muted loop playsinline preload="metadata" aria-label="The SunCore packaged unit with its two integrated solar thermal collectors, rotating slowly"></video></div>
+        <div class="kit__flag-copy">
+          <p class="kit__fit">When a unit is truly done &middot; the gold standard</p>
+          <h3>The SunCore</h3>
+          <p>We do not lead with replacement. We get more from what you have. When a unit is actually at end of life, this is what replaces it: a frontier-class packaged unit with solar thermal built in. The film above is the best look at it.</p>
+          <p class="kit__fig">IEER 31 &middot; COP 6 &middot; half or more off heating and cooling energy<sup class="fn"><a href="#notes" aria-label="See note 1">1</a></sup></p>
+        </div>
+      </div>
+      <p class="kit__more">Nothing belongs on that façade. Your incumbent contractors stay your contractors. <strong>The path is opened by this hotel&rsquo;s numbers.</strong><sup class="fn"><a href="#notes" aria-label="See note 1">1</a></sup></p>
+      <p class="quiet quiet--dark"><a href="how-it-works.html">How each fix works, in plain language &rarr;</a></p>
+    </div>
+  </section>
+
+  <section class="beat beat--rule" id="proof" aria-labelledby="proof-h">
+    <div class="wrap beat__narrow">
+      <h2 id="proof-h">Measured at 200+ named sites.</h2>
+      <p class="lead">Metered results from the technologies we install, at the sites named, under their own conditions: the same compressor, coil, and power-conditioning equipment this hotel already runs.<sup class="fn"><a href="#notes" aria-label="See notes 1 and 9">1, 9</a></sup> <strong>If a claim can&rsquo;t survive your controller, we don&rsquo;t make it.</strong></p>
+      <div class="ledger" id="ledger" aria-hidden="true">
+        <div class="ledger__col" style="--dur: 210s"></div>
+        <div class="ledger__col" style="--dur: 260s"></div>
+        <div class="ledger__col" style="--dur: 180s"></div>
+      </div>
+      <p class="quiet">The ledger above is a live sample; hover to hold it still, click any entry for its context. <button type="button" class="textlink" id="record-open" aria-haspopup="dialog">Read the full record: 95 documented examples</button></p>
+    </div>
+  </section>
+
+  <section class="beat beat--rule" id="hotels-proof" aria-labelledby="hproof-h">
+    <div class="wrap beat__narrow">
+      <h2 id="hproof-h">Measured in hotels, one technology at a time.</h2>
+      <p class="lead">Every result here is a single technology working on its own. Because each one acts on a different part of the building, they stack.<sup class="fn"><a href="#notes" aria-label="See notes 1 and 9">1, 9</a></sup></p>
+      <div class="hproof">
+        <div class="hproof__group">
+          <h3 class="hproof__label">HVAC optimizer <span>off the HVAC load</span></h3>
+          <ul class="hproof__list">
+            <li>
+              <span class="hproof__fig">20%<small>off HVAC</small></span>
+              <span class="hproof__meta"><span class="hproof__site">Vitz Hotel</span><span class="hproof__ctx">India &middot; Voltas 3.0 ton &middot; field test</span></span>
+            </li>
+            <li>
+              <span class="hproof__fig">12 to 27%<small>across the deployment</small></span>
+              <span class="hproof__meta"><span class="hproof__site">UAE deployment, including Sheraton Jumeirah</span><span class="hproof__ctx">14 institutions</span></span>
+            </li>
+          </ul>
+        </div>
+        <div class="hproof__group">
+          <h3 class="hproof__label">Power conditioning <span>an additional cut, off the whole building</span></h3>
+          <ul class="hproof__list">
+            <li>
+              <span class="hproof__fig">13.5%<small>whole building</small></span>
+              <span class="hproof__meta"><span class="hproof__site">Hilton Garden Inn</span><span class="hproof__ctx">Marietta, GA &middot; ABRAXAS, 12-month study</span></span>
+            </li>
+            <li>
+              <span class="hproof__fig">14%<small>whole building</small></span>
+              <span class="hproof__meta"><span class="hproof__site">Caribe Resort</span><span class="hproof__ctx">Orange Beach, AL &middot; facilities-director measured</span></span>
+            </li>
+            <li>
+              <span class="hproof__fig">8.59%<small>demand, whole building</small></span>
+              <span class="hproof__meta"><span class="hproof__site">Las Vegas Hotel & Casino</span><span class="hproof__ctx">Las Vegas, NV &middot; independent panel metering</span></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="quiet">Each figure was measured at the named property under its own conditions, one technology at a time. It is not a prediction for your hotel.<sup class="fn"><a href="#notes" aria-label="See notes 1 and 9">1, 9</a></sup></p>
+    </div>
+  </section>
+
+  <section class="beat beat--rule" id="chain" aria-labelledby="chain-h">
+    <div class="wrap beat__narrow">
+      <h2 id="chain-h">One page for everyone who has to say yes.</h2>
+      <p class="lead">A general manager finds us, an owner or asset manager signs, a controller checks the math. <strong>This page is written to be forwarded.</strong></p>
+      <details class="gate">
+        <summary><span class="plus" aria-hidden="true">+</span>If you run the hotel</summary>
+        <div class="gate__body">
+          <p>No keys go out of service beyond the afternoon a unit is worked on. Guest comfort is held or improved.<sup class="fn"><a href="#notes" aria-label="See notes 1 and 12">1, 12</a></sup> Nothing appears on the façade. <strong>Your incumbent HVAC and mechanical companies stay your contractors:</strong> we prefer to certify and work through them, not around them. Less compressor runtime means fewer emergency calls and fewer no-cool complaints at the desk.</p>
+        </div>
+      </details>
+      <details class="gate">
+        <summary><span class="plus" aria-hidden="true">+</span>If you own the P&L</summary>
+        <div class="gate__body">
+          <p>Demand comes off first. HVAC waste comes off second. Every fix must clear a roughly two-year payback bar, or run cash-flow positive from day one, on your hotel&rsquo;s numbers.<sup class="fn"><a href="#notes" aria-label="See notes 1 and 2">1, 2</a></sup> If we can&rsquo;t prove the savings, nothing is installed and you owe nothing. Every rebate, credit, and deduction the project qualifies for is found and filed for you.<sup class="fn"><a href="#notes" aria-label="See notes 3 and 4">3, 4</a></sup></p>
+        </div>
+      </details>
+      <details class="gate">
+        <summary><span class="plus" aria-hidden="true">+</span>If you answer for ESG or risk</summary>
+        <div class="gate__body">
+          <p>Seven days of metering before and after, per unit, witnessed by any third party you choose. Recognized protocols on request: IPMVP Option C, ASHRAE Guideline 14.<sup class="fn"><a href="#notes" aria-label="See note 8">8</a></sup> The result is verified kWh you can carry into energy and emissions reporting for the flag, not a marketing claim. Guest comfort is held or improved, and existing building controls are untouched.<sup class="fn"><a href="#notes" aria-label="See notes 1 and 12">1, 12</a></sup></p>
+        </div>
+      </details>
+      <p class="quiet">Forward this page to the person whose yes you need next. It was written for them too.</p>
+    </div>
+  </section>
+
+  <section class="beat beat--rule" id="stakes" aria-labelledby="stakes-h">
+    <div class="wrap beat__narrow">
+      <h2 id="stakes-h">A room that cannot hold 72 is a lost night.</h2>
+      <p class="lead">Guest experience is the P&L. The same waste that pads the bill is what retires PTACs, VRFs, hoods, and pool equipment early.<sup class="fn"><a href="#notes" aria-label="See notes 1 and 12">1, 12</a></sup> <strong>We get more years out of what you have. When a unit is actually done, we replace it with the gold standard.</strong></p>
+    </div>
+  </section>
+
+  <section class="beat beat--rule" id="success" aria-labelledby="success-h">
+    <div class="wrap beat__narrow">
+      <h2 id="success-h">What it looks like when both lines come off.</h2>
+      <p class="lead">A lower demand charge the next bill cycle. HVAC that holds 72 for less energy, on the machines already in the walls.<sup class="fn"><a href="#notes" aria-label="See note 1">1</a></sup> Fewer service calls. Gold-standard replacements only where they are due. And the part people remember: <strong>walking into the next review with verified kWh nobody can argue with.</strong></p>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="close-h">
+    <div class="close__media" aria-hidden="true">
+      <img src="assets/img/close-dusk.jpg" alt="" loading="lazy">
+      <div class="hero__scrim"></div>
+    </div>
+    <div class="wrap close__in">
+      <h2 id="close-h">Take the peak off your hotel.</h2>
+      <p class="hero__lede">Fifteen minutes tells you whether the property qualifies. The diagnosis is on us.<sup class="fn"><a href="#notes" aria-label="See note 2">2</a></sup></p>
+      <div class="cta" data-cta>
+        <button type="button" class="btn btn--lg" data-book>Book the 15-minute fit call</button>
+        <button type="button" class="textlink textlink--dark js-sms-toggle" aria-expanded="false">Text Dan directly</button>
+      </div>
+      <div class="sms" role="group" aria-label="Text the founder">
+        <p class="sms__to">To Dan &middot; (864) 777-0688</p>
+        <textarea rows="4" spellcheck="false" aria-label="Message to Dan">Hi Dan, I run a hotel and I want to see what cutting the peak and the HVAC waste would look like, without the sales song and dance. What does it take to qualify?</textarea>
+        <div class="sms__foot">
+          <span class="sms__hint">Opens in your messages, ready to send.</span>
+          <a class="btn btn--sm js-sms-send" href="#" data-phone="+18647770688">Send message</a>
+        </div>
+      </div>
+      <div class="team-block">
+        <h3 class="team-block__h">Meet the people behind the numbers</h3>
+        <div class="team">
+          <div class="person"><img src="assets/img/daniel.jpeg" alt="Daniel Gutierrez" loading="lazy"><div><h3>Daniel Gutierrez</h3><p class="person__role">CEO + Founder, Energy Plus</p><p>19 years connecting people, capital, and opportunity across 14+ industries. Former director of FDA-registered clinical trials. Works fee-for-performance. Direct: <a href="mailto:dan@yourenergyplus.com">dan@yourenergyplus.com</a> &middot; <a href="tel:+18647770688">(864) 777-0688</a>.</p></div></div>
+          <div class="person"><img src="assets/img/cliff.jpeg" alt="Cliff Suljak" loading="lazy"><div><h3>Cliff Suljak</h3><p class="person__role">Chief Materials Engineer</p><p>The diagnostician. Sole-source to Sandia National Laboratories. He runs the measurement on your hotel, on your side of the table.</p></div></div>
+          <div class="person"><img src="assets/img/ronson.jpeg" alt="Ronson Provido" loading="lazy"><div><h3>Ronson Provido</h3><p class="person__role">Principal Engineering Advisor</p><p>20+ years in electrical engineering across design, commissioning, and project management, including LAX. Licensed PE, Title 24 and LEED qualified.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="assets/img/energy-plus-logo.png" alt="Energy Plus" width="104" height="30" style="filter:none">
+    <p class="foot__tagline">Energy Plus. Independent energy partner to hotels. We diagnose the property first, then prove the savings in it.</p>
+
+    <div class="foot__notes" id="notes">
+      <p><strong>How to read this page.</strong> Energy Plus is an independent energy solutions partner. We do not manufacture equipment. We diagnose each hotel and procure, size, and integrate the right technologies from our stack for that specific building. The numbered notes below apply to the marked figures and statements throughout this page.</p>
+      <ul>
+        <li><span class="n">1</span><span><strong>Savings and performance figures.</strong> All savings, bill-reduction, equipment-life, maintenance, and payback figures shown (including the heating-and-cooling savings range of 15 to 48% of HVAC energy, which varies by system type) are illustrative estimates or results achieved at specific facilities under their own conditions. They are not predictions or guarantees of your results. Actual results depend on the building, climate, occupancy, equipment condition, and utility rates, which is exactly why we prove savings on site before you commit. Modeled numbers are directional estimates, not quotes.</span></li>
+        <li><span class="n">2</span><span><strong>Program terms and eligibility.</strong> Our done-for-you program, including negotiation, pricing, and contract terms, is offered case-by-case. Properties that do not qualify for the done-for-you program may instead be offered self-directed options, which carry different terms, pricing, and responsibilities. "No cost," "the diagnosis is on us," and "nothing owed" describe the diagnosis and pilot phase for qualifying properties; they do not describe the cost of any installed solution. Eligibility, scheduling, and availability are determined during the application and diagnosis process.</span></li>
+        <li><span class="n">3</span><span><strong>Tax incentives.</strong> Any tax figures shown are potential amounts based on current federal rules and assumptions; they are not tax advice. Actual deductions depend on the building, the work performed, and your tax situation. Consult a qualified tax advisor.</span></li>
+        <li><span class="n">4</span><span><strong>Utility and incentive programs.</strong> Utility-program coverage varies by state, utility, and program, and is subject to program availability, funding, and qualification. Amounts shown are illustrative and are not guaranteed.</span></li>
+        <li><span class="n">5</span><span><strong>Professional history and credentials.</strong> Biographical and credential statements reflect documented professional history. Supporting documentation is available for verification on request.</span></li>
+        <li><span class="n">8</span><span><strong>Measurement and verification.</strong> Independent measurement and verification of results, including under recognized protocols such as IPMVP Option C and ASHRAE Guideline 14, is available upon request on qualifying projects. Where performed, verification confirms measured results for that specific project only.</span></li>
+        <li><span class="n">9</span><span><strong>Third-party evaluations and named organizations.</strong> References to NASA, named utilities, named hotels, and other organizations reflect publicly available reports and evaluations concerning the underlying technologies that Energy Plus deploys. They do not refer to Energy Plus, and do not constitute or imply endorsement, sponsorship, certification, or affiliation.</span></li>
+        <li><span class="n">12</span><span><strong>Equipment life, maintenance, and guest comfort.</strong> Statements regarding extended equipment life, reduced maintenance, improved humidity control, temperature stability, guest comfort, and single-application or long-lasting benefits assume proper installation, operation, and maintenance. They are not a warranty, and actual outcomes will vary. Nothing here replaces your own building monitoring, life-safety systems, or regulatory obligations.</span></li>
+        <li><span class="n">15</span><span><strong>Peak demand as a share of the bill.</strong> The ~30% figure on this page is an industry-typical hotel range: demand charges are often 30 to 50% of a commercial hotel electric bill. It is not a reading of any one property. The Exam confirms a hotel\'s actual share from 12 months of interval data. Interval length (15 or 30 minutes) varies by utility.</span></li>
+        <li><span class="n">16</span><span><strong>Hotel equipment costs.</strong> Replacement and modernization ranges for PTACs, elevator cabs, pool pumps, and chiller emergency rentals are industry-typical figures used in the Energy Plus hotel estimator. They are not quotes for any one hotel and are not taken from a specific vendor contract. Actual cost depends on the unit, the building, and the market at the time of replacement. The 100 kWh / 115 kWh pair in Fig. 02 is an illustration of the estimator's hotel floor &mdash; about 14 to 15 percent extra on the meter from distortion. It is not a reading of any one hotel's bills.</span></li>
+      </ul>
+    </div>
+
+    <details class="disclosures" id="disclosures-terms">
+      <summary>Important Disclosures and Terms <span class="plus" aria-hidden="true">+</span></summary>
+      <div class="disclosures__body">
+        <p><em>Effective date: August 12, 2026.</em> These disclosures apply to Energy Plus marketing and informational materials, including videos, presentations, web pages, and printed materials. They explain the basis for the statements, figures, and offers presented in those materials. By viewing or relying on those materials, you acknowledge these disclosures. Where a signed agreement exists, that agreement governs.</p>
+        <h4>1. General</h4>
+        <p>This content is provided for general informational purposes only. It is not an offer, warranty, guarantee, or professional advice. All figures are estimates, are illustrative, and are subject to change without notice. The only binding commitments between you and Energy Plus are those set out in a signed written agreement. Results vary by facility.</p>
+        <h4>2. Performance figures</h4>
+        <p>Stated efficiency and savings ranges, including but not limited to 15 to 48 percent of HVAC energy depending on the system, 30 to 50 percent, up to 36 percent, an IEER of 31, and a COP of 6, reflect results observed under specific conditions or reported in specific studies. Where a range is quoted for combined measures, the low end reflects the outcomes we treat as the planning floor and the high end requires per-site modeling. Actual performance depends on factors including equipment type, equipment age, baseline efficiency, climate, occupancy, usage patterns, maintenance, and installation quality. Your actual results may differ from, and may fall below, the ranges shown.</p>
+        <h4>3. System and technical statements</h4>
+        <p>Descriptions of how heating and cooling systems operate, including any statement that the compressor accounts for a majority or a stated share of system energy use, are typical or representative rather than universal. Actual values vary by system design, configuration, and operation. PTACs, VRFs, kitchen hoods, and pool equipment describe the classes of equipment a hotel typically runs.</p>
+        <h4>4. Savings and return on investment</h4>
+        <p>Any savings, payback period, or return on investment figure is an estimate based on assumptions that may not reflect the conditions at your facility. It is not a guarantee of any specific financial outcome. Modeled results and prior results do not predict future performance.</p>
+        <h4>5. Cash flow and program cost</h4>
+        <p>Statements that a project can be cash-flow positive from day one, or that incentives can cover a significant share of a program, describe outcomes that are achievable only under certain financing structures, utility rates, program eligibility, and tax positions. These outcomes are not available in all cases and are not promised for any particular customer.</p>
+        <h4>6. Tax credits, deductions, and rebates</h4>
+        <p>The availability, amounts, and eligibility requirements of tax deductions, tax credits, and utility rebates depend on jurisdiction, current law, program funding, and your individual tax situation. Programs change and may end without notice. Energy Plus do not provide tax, accounting, or legal advice and do not guarantee that any incentive will be approved or received. Consult your own qualified advisor regarding your specific circumstances.</p>
+        <h4>7. Measurement and verification</h4>
+        <p>Independent measurement and verification of results, including under recognized protocols such as the International Performance Measurement and Verification Protocol (IPMVP) Option C and ASHRAE Guideline 14, is available upon request on qualifying projects. Where performed, verification confirms measured results for that specific project only and does not guarantee future results or results at any other site.</p>
+        <h4>8. Third-party evaluations and named organizations</h4>
+        <p>References to NASA, Durham College, named utilities, named hotels, and other organizations reflect publicly available reports and evaluations concerning the underlying technologies. They do not constitute or imply endorsement, sponsorship, certification, or affiliation, unless expressly stated in writing.</p>
+        <h4>9. Case studies and references</h4>
+        <p>Case studies, study counts, and climate or geographic references reflect specific installations completed under specific conditions. They are illustrative and are not predictive of the results you will achieve at your hotel.</p>
+        <h4>10. Third-party products and trademarks</h4>
+        <p>Certain technologies referenced are manufactured or supplied by third parties. All product names, logos, and trademarks are the property of their respective owners. Specifications are subject to change without notice.</p>
+        <h4>11. Equipment life and maintenance</h4>
+        <p>Statements regarding extended equipment life, reduced maintenance, improved humidity control, and single-application or long-lasting benefits assume proper installation, operation, and maintenance. They are not a warranty, and actual outcomes will vary. Warranty terms, if any, are provided separately in writing.</p>
+        <h4>12. Forward-looking statements</h4>
+        <p>Statements about future benefits, savings, performance, and outcomes are forward-looking and inherently uncertain. Actual results may differ materially from those expressed or implied.</p>
+        <h4>13. Not professional advice; assessment required</h4>
+        <p>The information presented is general and educational in nature. It is not engineering, financial, tax, or legal advice for your specific situation. A formal assessment of your hotel is required before any specific recommendation, scope, or projected result can be provided.</p>
+        <h4>14. Analogies</h4>
+        <p>References to diagnosis, examinations, prescriptions, or disease are analogies used to describe the energy assessment process. They are not medical statements and are not intended to convey any medical meaning.</p>
+        <p><strong>Questions.</strong> For questions about these disclosures or any statement in our materials, contact Energy Plus at <a href="mailto:dan@yourenergyplus.com">dan@yourenergyplus.com</a> or <a href="tel:+18647770688">(864) 777-0688</a>.</p>
+      </div>
+    </details>
+
+    <div class="foot__meta">
+      <span>&copy; 2026 Energy Plus</span>
+      <span>Independent Energy Solutions Partner</span>
+    </div>
+  </div>
+</footer>
+
+<dialog class="sheet" id="record-sheet" aria-labelledby="record-title">
+  <div class="sheet__bar">
+    <h2 id="record-title">The full record</h2>
+    <button type="button" class="sheet__close" id="record-close" aria-label="Close the full record">&times;</button>
+  </div>
+  <div class="sheet__body" id="record-body">
+    <noscript><p>The full record requires JavaScript. The results above are representative; documentation for all 95 is available on request.</p></noscript>
+  </div>
+  <p class="sheet__note">Every result was measured at the named site under its own conditions; it is not a prediction for your hotel. Regional programs aggregate hundreds of additional sites into the 200-plus total.<sup class="fn"><a href="#notes">1, 9</a></sup></p>
+</dialog>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>
